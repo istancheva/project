@@ -18,7 +18,7 @@ enum {
     PUSH = 1,
     POP,
     UNSHIFT,
-    SHIFT,
+    SHT,
     STRINS,
     PRINT,
     EXIT
@@ -32,7 +32,7 @@ int main(int argc, char** argv) {
     while(1)
     {
         fprintf(stdout, "\n%d-push,%d-pop,%d-unshift,%d-shift,%d-sraightInsert,%d-print,%d-exit:",
-                            PUSH, POP, UNSHIFT, SHIFT, STRINS, PRINT, EXIT);
+                            PUSH, POP, UNSHIFT, SHT, STRINS, PRINT, EXIT);
         scanf("%d",&opt);
         switch(opt)
         {
@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
                           unshift(arr,t);
                           fprintf(stdout,"item:%d unshifted!\n",t);
                           break;
-            case SHIFT: res = shift(arr, &t); 
+            case SHT: res = shift(arr, &t); 
                         if( res != -1)
                           {
                             fprintf(stdout, "item:%d shifted!\n",t);
